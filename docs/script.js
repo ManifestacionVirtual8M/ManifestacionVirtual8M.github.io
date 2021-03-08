@@ -253,8 +253,8 @@ function randomFloat(min, max) {
 }
 
 function addMarker2() {
-    var lt = randomFloat(40.412, 40.422);
-    var ln = randomFloat(-3.697, -3.688);
+    var lt = randomFloat(40.408, 40.418);
+    var ln = randomFloat(-3.695, -3.692);
     var marker = new google.maps.Marker({
         position: {
             lat: lt,
@@ -278,8 +278,8 @@ function addMarker2() {
 
 
 function addMarker() {
-    var lt = randomFloat(40.412, 40.422);
-    var ln = randomFloat(-3.697, -3.688);
+    var lt = randomFloat(40.408, 40.418);
+    var ln = randomFloat(-3.695, -3.692);
     var marker = new google.maps.Marker({
         position: {
             lat: lt,
