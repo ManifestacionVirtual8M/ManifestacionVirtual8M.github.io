@@ -261,7 +261,11 @@ function addMarker2() {
         "¡Igualdad, igualdad!",
         "¿Quién dijo que hoy no íbamos a tomar las calles?",
         "Que sepan que somos muchas",
-        "¡Las calles también se pueden tomar desde casa!"
+        "¡Las calles también se pueden tomar desde casa!",
+        "¡Estamos en las calles!",
+        "¡Estamos aquí!",
+        "¡Estamos ubicadas!",
+        "¡Si nos separan, más nos unimos!"
     ];
 
     var rand = Math.floor(Math.random() * cars.length);
