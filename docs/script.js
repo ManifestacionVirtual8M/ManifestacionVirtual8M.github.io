@@ -253,6 +253,19 @@ function randomFloat(min, max) {
 }
 
 function addMarker2() {
+
+    var cars = [
+        "¡La revolución será feminista o no será!",
+        "¡Ni una menos!",
+        "¡Luego diréis que somos cinco o seis!",
+        "¡Igualdad, igualdad!",
+        "¿Quién dijo que hoy no íbamos a tomar las calles?",
+        "Que sepan que somos muchas",
+        "¡Las calles también se pueden tomar desde casa!"
+    ];
+
+    var rand = Math.floor(Math.random() * cars.length);
+
     var lt = randomFloat(40.408, 40.418);
     var ln = randomFloat(-3.695, -3.692);
     var marker = new google.maps.Marker({
@@ -264,7 +277,7 @@ function addMarker2() {
         icon: 'm2.png'
     });
     var InfoWindow = new google.maps.InfoWindow({
-        content: '<h4>¡NO NOS MIRES!</h4>'
+        content: '<h4>' + cars[rand] + '</h4>'
     })
     InfoWindow.open(myMap, marker);
 
