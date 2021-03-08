@@ -10,13 +10,15 @@ $(document).ready(function () {
     GetData();
 });
 
+//40.41361009689965, -3.6933718389796053
+
 function initMap() {
     var element = document.getElementById('map');
     var options = {
         zoom: 15,
         center: {
-            lat: 40.41763478749649,
-            lng: -3.692933611494517
+            lat: 40.41363478749649,
+            lng: -3.693333611494517
         },
         streetViewControl: false,
         disableDefaultUI: true,
@@ -272,9 +274,12 @@ function addMarker2() {
     })
 }
 
+//40.41361009689965, -3.6933718389796053
+
+
 function addMarker() {
-    var lt = randomFloat(40.412, 40.422);
-    var ln = randomFloat(-3.697, -3.688);
+    var lt = randomFloat(40.408, 40.418);
+    var ln = randomFloat(-3.695, -3.692);
     var marker = new google.maps.Marker({
         position: {
             lat: lt,
