@@ -212,7 +212,7 @@ function initMap() {
 }
 
 function GetData() {
-    var data_all = 'https://api.thingspeak.com/channels/262211/fields/1.json?api_key=UIBJKG7DKRHOTYEJ&start=2020-5-28%2000:00:00&offset=3';
+    var data_all = 'https://api.thingspeak.com/channels/1320246/fields/1.json?api_key=GCT5HEERUXPY0GYD';
 
     $.ajax({
         url: data_all,
@@ -226,10 +226,10 @@ function GetData() {
                 if (i == 'feeds') {
                     users = item.length;
 
-                    $('#counter').text(item.length - 6740);
+                    $('#counter').text(item.length + 420);
 
                     if (once) {
-                        for (var i = 0; i < users - 6740; i++) {
+                        for (var i = 0; i < users  + 420; i++) {
                             addMarker();
                         }
                         once = false;
@@ -311,7 +311,7 @@ $('#send-dialog').click(function () {
     validate();
     if (ap) {
         addMarker2();
-        $.get("https://api.thingspeak.com/update.json?api_key=JDJCGRJD46GEN020&field1=125", function (data, status) {});
+        $.get("https://api.thingspeak.com/update.json?api_key=JAQ59YXQWF0WPRF9&field1=125", function (data, status) {});
         GetData();
         document.querySelector('dialog').close();
     }
