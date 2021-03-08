@@ -212,7 +212,7 @@ function initMap() {
 }
 
 function GetData() {
-    var data_all = 'https://api.thingspeak.com/channels/1320246/fields/1.json?api_key=GCT5HEERUXPY0GYD?start=2020-07-03 00:00:00&end=2022-09-04 23:59:59&offset=-03.00';
+    var data_all = 'https://api.thingspeak.com/channels/1320246/fields/1.json?api_key=GCT5HEERUXPY0GYD?start=2021-01-01 00:00:00&end=2022-09-04 23:59:59&offset=-03.00';
 
 
     $.ajax({
