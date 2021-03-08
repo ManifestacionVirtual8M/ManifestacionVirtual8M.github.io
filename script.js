@@ -212,7 +212,8 @@ function initMap() {
 }
 
 function GetData() {
-    var data_all = 'https://api.thingspeak.com/channels/1320246/fields/1.json?api_key=GCT5HEERUXPY0GYD';
+    var data_all = 'https://api.thingspeak.com/channels/1320246/fields/1.json?api_key=GCT5HEERUXPY0GYD?start=2021-07-03 00:00:00&end=2021-09-03 23:59:59&offset=-03.00';
+
 
     $.ajax({
         url: data_all,
@@ -225,11 +226,10 @@ function GetData() {
             $.each(data, function (i, item) {
                 if (i == 'feeds') {
                     users = item.length;
-
-                    $('#counter').text(item.length + 470);
+                    $('#counter').text(users + 420);
 
                     if (once) {
-                        for (var i = 0; i < users  + 470; i++) {
+                        for (var i = 0; i < users + 420; i++) {
                             addMarker();
                         }
                         once = false;
@@ -242,7 +242,7 @@ function GetData() {
         }
     });
 
-    setTimeout(GetData, 3000);
+    setTimeout(GetData, 600);
 
 }
 
