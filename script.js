@@ -242,7 +242,7 @@ function GetData() {
         }
     });
 
-    setTimeout(GetData, 3000);
+    setTimeout(GetData, 6000);
 
 }
 
